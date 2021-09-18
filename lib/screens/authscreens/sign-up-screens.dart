@@ -1,19 +1,21 @@
-import 'package:djassi/screens/authsceen/component/already-have%20-an-account.aut.component.dart';
-import 'package:djassi/screens/authsceen/component/rounded-button.dart';
-import 'package:djassi/screens/authsceen/login-screens.dart';
 import 'package:flutter/material.dart';
+import 'package:djassi/screens/authscreens/component/text-form-field.dart';
+import 'package:djassi/screens/authscreens/component/validator-help.dart';
 
-import 'component/rounded-input-field.auth.component.dart';
-import 'component/rounded-password-field.auth.component.dart';
+class SignUpScreen extends StatefulWidget {
+  @override
+  _SignUpScreenState createState() => _SignUpScreenState();
+}
 
-class SignUpScreens extends StatelessWidget {
+class _SignUpScreenState extends State<SignUpScreen> {
+  bool showpassword = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body:SingleChildScrollView(
             child:Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height,
+                // height: MediaQuery.of(context).size.height,
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children:<Widget> [
@@ -25,52 +27,47 @@ class SignUpScreens extends StatelessWidget {
                             color: Colors.white
                         ),
                       ),
-                      SizedBox(height: 80.0,),
-                      RoundedInputField(
-                        hintText: "Nom",
-                        onChanged: (value) {},
+
+                      SecondTextfield(
+                        labelText: "Nom",
+                        placeholder: "beriha suy",
+                        isEmail: false,
+                        isRequired: true,
                       ),
-                      RoundedInputField(
-                        hintText: "Nom",
-                        onChanged: (value) {},
+                      SecondTextfield(
+                        labelText: "Prenom",
+                        placeholder: "beriha suy",
+                        isEmail: false,
+                        isRequired: true,
+
                       ),
-                      RoundedInputField(
-                        hintText: "Nom",
-                        onChanged: (value) {},
+                      SecondTextfield(
+                        labelText: "Sexe",
+                        placeholder: "F",
+                        isEmail: false,
+                        isRequired: true,
+
                       ),
-                      RoundedInputField(
-                        hintText: "Prenom",
-                        onChanged: (value) {},
+                      SecondTextfield(
+                        labelText: "email",
+                        placeholder: "xxxxx@xxxx.xxx",
+                        isEmail: true,
+                        isRequired: true,
                       ),
-                      RoundedInputField(
-                        hintText: "Sexe",
-                        onChanged: (value) {},
-                      ),
-                      RoundedInputField(
-                        hintText: "Email",
-                        onChanged: (value) {},
-                      ),
-                      RoundedPasswordField(
-                        onChanged: (value) {},
-                      ),
-                      RoundedButton(
-                        text: "SIGN UP",
-                        press: () {},
-                      ),
-                      SizedBox(height: 80.0,),
-                      AlreadyHaveAnAccountCheck(
-                        login: false,
-                        press: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) {
-                                return LoginScreens();
-                              },
-                            ),
-                          );
+                      SecondTextfield(
+                        labelText: "password",
+                        placeholder: "xxxxxxxxx",
+                        isPassword: true,
+                        isRequired: true,
+                        icon:Icon(Icons.remove_red_eye_sharp),
+                        showPassword: showpassword,
+                        onVisiblePassword: (){
+                          setState(() {
+                            showpassword = !showpassword;
+                          });
                         },
                       ),
+                      // SizedBox(height: 80.0,),
                     ])
             )
         )
