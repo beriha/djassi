@@ -15,7 +15,7 @@ class PrimaryLongButton extends Card {
   }) : super(
           child: Container(
             width: width,
-            height: 35.0,
+            height: 40.0,
             decoration: new BoxDecoration(
               borderRadius: BorderRadius.circular(5),
               gradient: new LinearGradient(
