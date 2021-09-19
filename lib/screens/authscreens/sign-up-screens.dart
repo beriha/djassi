@@ -1,7 +1,6 @@
 import 'package:djassi/utils/button-utils/validate.button-utils.dart';
 import 'package:flutter/material.dart';
 import 'package:djassi/screens/authscreens/component/text-form-field.dart';
-import 'package:djassi/screens/authscreens/component/validator-help.dart';
 
 class SignUpScreen extends StatefulWidget {
   @override

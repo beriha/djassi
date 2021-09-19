@@ -9,7 +9,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
-    final spaceBetweenAction = 10.0;
+    // final spaceBetweenAction = 10.0;
     return Container(
       width: screenSize.width / 1.5,
       height: screenSize.height,
