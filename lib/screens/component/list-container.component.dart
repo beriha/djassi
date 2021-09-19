@@ -3,44 +3,50 @@ import 'package:flutter/material.dart';
 class ListContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height:100 ,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                Container(
-                  width:10,
-                  color: Colors.grey,
-                ),
-              ],
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child:
+          //Chips
+          Wrap(
+            direction: Axis.horizontal,
+            spacing:10.0,
+            runSpacing:5.0,
+            children: <Widget>[
+              myChips("Mariage"),
+              myChips("Emploi"),
+              myChips("Religion"),
+              myChips("Politique"),
+              myChips("Sport"),
+              myChips("Musique"),
+              myChips("Culture"),
+            ],
+          ),
 
-
-
-                /*Card(
-                  child: Container(
-                    height:2,
-                    width: 15,
-                    color: Colors.grey,
-                  ),
-                ),
-                Card(
-                  child: Container(
-                    height: 5,
-                    width: 15,
-                    color: Colors.grey,
-                  ),
-                ),
-                Card(
-                  child: Container(
-                    height: 5,
-                    width: 15,
-                    color: Colors.grey,
-                  ),
-
-                )*/
-              
-            )
     );
+
   }
 }
+
+//Grey Chips
+Container myChips(String chipName) {
+  return Container(
+    child: ElevatedButton(
+      style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(
+         borderRadius: BorderRadius.circular(
+            30.0)),
+      primary: Colors.white, // background
+        onPrimary: Colors.grey, // foreground
+      ),
+
+
+        child: Text(chipName,
+          style:TextStyle(
+            color: new Color(0xFF1EAE98),
+          ),
+        ),
+        onPressed: () {},
+    ),
+  );
+}
+
 
