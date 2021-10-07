@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:getwidget/getwidget.dart';
 
 class TennisScreen extends StatefulWidget {
   const TennisScreen({Key? key}) : super(key: key);
@@ -81,13 +82,15 @@ class _TennisScreenState extends State<TennisScreen> {
                               height: 5.0,
                             ),
                             Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 8.0, bottom: 8.0),
+                              padding: const EdgeInsets.only(
+                                  left: 8.0, bottom: 8.0, right: 8.0),
                               child: OutlinedButton(
                                   onPressed: () {},
-                                  child: Text(
-                                    "Lire Plus",
-                                    style: TextStyle(color: Colors.black),
+                                  child: GFAccordion(
+                                    title: "Lire Plus",
+                                    textStyle: TextStyle(color: Colors.black),
+                                    content:
+                                        "bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla",
                                   )),
                             ),
                           ],
@@ -154,13 +157,15 @@ class _TennisScreenState extends State<TennisScreen> {
                               height: 5.0,
                             ),
                             Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 8.0, bottom: 8.0),
+                              padding: const EdgeInsets.only(
+                                  left: 8.0, bottom: 8.0, right: 8.0),
                               child: OutlinedButton(
                                   onPressed: () {},
-                                  child: Text(
-                                    "Lire Plus",
-                                    style: TextStyle(color: Colors.black),
+                                  child: GFAccordion(
+                                    title: "Lire Plus",
+                                    textStyle: TextStyle(color: Colors.black),
+                                    content:
+                                        "bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla",
                                   )),
                             ),
                           ],
@@ -227,13 +232,15 @@ class _TennisScreenState extends State<TennisScreen> {
                               height: 5.0,
                             ),
                             Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 8.0, bottom: 8.0),
+                              padding: const EdgeInsets.only(
+                                  left: 8.0, bottom: 8.0, right: 8.0),
                               child: OutlinedButton(
                                   onPressed: () {},
-                                  child: Text(
-                                    "Lire Plus",
-                                    style: TextStyle(color: Colors.black),
+                                  child: GFAccordion(
+                                    title: "Lire Plus",
+                                    textStyle: TextStyle(color: Colors.black),
+                                    content:
+                                        "bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla",
                                   )),
                             ),
                           ],
@@ -300,13 +307,15 @@ class _TennisScreenState extends State<TennisScreen> {
                               height: 5.0,
                             ),
                             Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 8.0, bottom: 8.0),
+                              padding: const EdgeInsets.only(
+                                  left: 8.0, bottom: 8.0, right: 8.0),
                               child: OutlinedButton(
                                   onPressed: () {},
-                                  child: Text(
-                                    "Lire Plus",
-                                    style: TextStyle(color: Colors.black),
+                                  child: GFAccordion(
+                                    title: "Lire Plus",
+                                    textStyle: TextStyle(color: Colors.black),
+                                    content:
+                                        "bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla",
                                   )),
                             ),
                           ],

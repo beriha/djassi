@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:getwidget/getwidget.dart';
 
 class AutreScreen extends StatefulWidget {
   const AutreScreen({Key? key}) : super(key: key);
@@ -19,7 +20,7 @@ class _AutreScreenState extends State<AutreScreen> {
             },
             child: Icon(Icons.arrow_back_outlined),
           ),
-          title: Text("Autres Sport"),
+          title: Text("Autres Sports"),
           centerTitle: true,
           elevation: 0,
         ),
@@ -81,13 +82,15 @@ class _AutreScreenState extends State<AutreScreen> {
                               height: 5.0,
                             ),
                             Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 8.0, bottom: 8.0),
+                              padding: const EdgeInsets.only(
+                                  left: 8.0, bottom: 8.0, right: 8.0),
                               child: OutlinedButton(
                                   onPressed: () {},
-                                  child: Text(
-                                    "Lire Plus",
-                                    style: TextStyle(color: Colors.black),
+                                  child: GFAccordion(
+                                    title: "Lire Plus",
+                                    textStyle: TextStyle(color: Colors.black),
+                                    content:
+                                        "bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla",
                                   )),
                             ),
                           ],
@@ -154,13 +157,15 @@ class _AutreScreenState extends State<AutreScreen> {
                               height: 5.0,
                             ),
                             Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 8.0, bottom: 8.0),
+                              padding: const EdgeInsets.only(
+                                  left: 8.0, bottom: 8.0, right: 8.0),
                               child: OutlinedButton(
                                   onPressed: () {},
-                                  child: Text(
-                                    "Lire Plus",
-                                    style: TextStyle(color: Colors.black),
+                                  child: GFAccordion(
+                                    title: "Lire Plus",
+                                    textStyle: TextStyle(color: Colors.black),
+                                    content:
+                                        "bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla",
                                   )),
                             ),
                           ],
@@ -227,13 +232,15 @@ class _AutreScreenState extends State<AutreScreen> {
                               height: 5.0,
                             ),
                             Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 8.0, bottom: 8.0),
+                              padding: const EdgeInsets.only(
+                                  left: 8.0, bottom: 8.0, right: 8.0),
                               child: OutlinedButton(
                                   onPressed: () {},
-                                  child: Text(
-                                    "Lire Plus",
-                                    style: TextStyle(color: Colors.black),
+                                  child: GFAccordion(
+                                    title: "Lire Plus",
+                                    textStyle: TextStyle(color: Colors.black),
+                                    content:
+                                        "bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla",
                                   )),
                             ),
                           ],
@@ -300,13 +307,15 @@ class _AutreScreenState extends State<AutreScreen> {
                               height: 5.0,
                             ),
                             Padding(
-                              padding:
-                                  const EdgeInsets.only(left: 8.0, bottom: 8.0),
+                              padding: const EdgeInsets.only(
+                                  left: 8.0, bottom: 8.0, right: 8.0),
                               child: OutlinedButton(
                                   onPressed: () {},
-                                  child: Text(
-                                    "Lire Plus",
-                                    style: TextStyle(color: Colors.black),
+                                  child: GFAccordion(
+                                    title: "Lire Plus",
+                                    textStyle: TextStyle(color: Colors.black),
+                                    content:
+                                        "bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla bla blabla bla bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla",
                                   )),
                             ),
                           ],
