@@ -4,6 +4,7 @@ import 'package:djassi/screens/component/grid-view.component.dart';
 import 'package:djassi/screens/component/list-container.component.dart';
 import 'package:flutter/material.dart';
 import 'package:djassi/screens/component/drawer.component.dart';
+import 'package:djassi/screens/notification-screens.dart';
 
 
 class HomeScreens extends StatefulWidget {
@@ -35,7 +36,11 @@ class _HomeScreensState extends State<HomeScreens> {
             actions: [
               IconButton(
               icon:Icon(Icons.notifications_outlined,color: Colors.grey,) ,
-                onPressed: (){},
+                onPressed: (){
+                  /*Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+                    return NotificationPage();
+                  }));*/
+                },
           ),
               Padding(
                 padding: const EdgeInsets.only(right: 8.0),

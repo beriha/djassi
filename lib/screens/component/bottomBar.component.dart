@@ -54,7 +54,7 @@ class HomePageBottomBar extends StatelessWidget {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (context) => ModifScreen(),
+              builder: (context) => Modification(),
             ),
           );
         } else if (value == 2) {

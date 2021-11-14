@@ -1,21 +1,16 @@
-import 'package:djassi/screens/component/bottomBar.component.dart';
 import 'package:flutter/material.dart';
 
-
-class ModifScreen extends StatefulWidget {
+class Modification extends StatefulWidget {
   @override
-  _ModifScreenState createState() => _ModifScreenState();
+  _ModificationState createState() => _ModificationState();
 }
 
-class _ModifScreenState extends State<ModifScreen> {
+class _ModificationState extends State<Modification> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      // AppBar: MyAppBar(),
-      body: Text('je suis la page de modification'),
-      bottomNavigationBar: HomePageBottomBar(
-        currentIndex: 1,
-      ),
-    );
+    return Container();
   }
 }
+
+
+
