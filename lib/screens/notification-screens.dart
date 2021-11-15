@@ -1,49 +1,72 @@
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-class NotificationPage extends StatefulWidget {
+class NotifScreen extends StatefulWidget {
   @override
-  _NotificationPageState createState() => _NotificationPageState();
+  _NotifScreenState createState() => _NotifScreenState();
 }
 
-class _NotificationPageState extends State<NotificationPage> {
+class _NotifScreenState extends State<NotifScreen> {
 
   List<Coordonne> mescoordonne = [
-    Coordonne('assets/img/imgGromeo.jpeg','Romeo Pekaou', 'comment va tu?...','7H10'),
-    Coordonne('assets/img/estelleIMG.jpeg','Estelle Dato','comment va tu?...','7H10'),
-    Coordonne('assets/img/imageKKFle.jpeg','KKFLé', 'comment va tu?...','7H10'),
-    Coordonne( 'assets/img/imageOthi.jpeg','Charles Oth-Niel', 'comment va tu?...','7H10'),
-    Coordonne('assets/img/juniorfils.jpeg','Junior Kausron', 'comment va tu?...', '7H10'),
-    Coordonne('','sako charle', 'comment va tu?...','hier'),
-    Coordonne( 'assets/img/imageOthi.jpeg','Charles Oth-Niel', 'comment va tu?...','hier'),
-    Coordonne('assets/img/juniorfils.jpeg','Junior Kausron', 'comment va tu?...', 'hier'),
-    Coordonne('assets/img/imageKKFle.jpeg','KKFLé', 'comment va tu?...','hier'),
-    Coordonne( 'assets/img/imageOthi.jpeg','Charles Oth-Niel', 'comment va tu?...','hier'),
-    Coordonne('assets/img/juniorfils.jpeg','Junior Kausron', 'comment va tu?...', 'hier'),
-
+    Coordonne(imagePath: 'assets/photo-beri.jpg', nom: 'beriha suy', contMessage: 'beriha suy a envoyer un message', icon: Icon(Icons.notifications_outlined)),
+    Coordonne(imagePath: 'assets/photo-beri.jpg', nom: 'beriha suy', contMessage: 'beriha suy a envoyer un message', icon:  Icon(Icons.notifications_outlined)),
+    Coordonne(imagePath: 'assets/photo-beri.jpg', nom: 'beriha suy', contMessage: 'beriha suy a envoyer un message', icon:  Icon(Icons.notifications_outlined)),
+    Coordonne(imagePath: 'assets/photo-beri.jpg', nom: 'beriha suy', contMessage: 'beriha suy a envoyer un message', icon:  Icon(Icons.notifications_outlined)),
+    Coordonne(imagePath: 'assets/photo-beri.jpg', nom: 'beriha suy', contMessage: 'beriha suy a envoyer un message', icon:  Icon(Icons.notifications_outlined)),
+    Coordonne(imagePath: 'assets/photo-beri.jpg', nom: 'beriha suy', contMessage: 'beriha suy a envoyer un message', icon:  Icon(Icons.notifications_outlined)),
+    Coordonne(imagePath: 'assets/photo-beri.jpg', nom: 'beriha suy', contMessage: 'beriha suy a envoyer un message', icon:  Icon(Icons.notifications_outlined)),
+    Coordonne(imagePath: 'assets/photo-beri.jpg', nom: 'beriha suy', contMessage: 'beriha suy a envoyer un message', icon:  Icon(Icons.notifications_outlined)),
 
   ];
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-     // appBar:
-        body:Center(
-          
-        )
+    return SafeArea(
+      child: Scaffold(
+      appBar: AppBar(
+      elevation: 0,
+      title: Text('Notification'),
+      centerTitle: true,
+      actions: [
+        IconButton(
+          icon: Icon(
+            Icons.search,
+            color: Colors.grey,
+          ),
+          onPressed: () {},
+        ),
+      ],
+    ),
+        body: Center(
+          child:Expanded(
+            child: ListView.builder(
+                itemCount: mescoordonne.length,
+                itemBuilder: (context ,i) {
+                  Coordonne coordonne = mescoordonne[i];
+                  String key = coordonne.imagePath;
+                  return Dismissible(key: Key(key),
+                    child:  ListTile(
+                      title: Text(mescoordonne[i].nom),
+                      leading: CircleAvatar(
+                        backgroundImage: AssetImage(mescoordonne[i].imagePath),
+                      ),
+                      subtitle: Text(mescoordonne[i].contMessage),
+                      trailing: mescoordonne[i].icon,
+                    ),
+                  );
+                }),
+          ),
+        ),
+      ),
     );
   }
+
 }
 
-class Coordonne{
+  class Coordonne {
   String nom;
-  String imagePath;
+  String imagePath ;
   String contMessage;
-  String temps;
-  Coordonne(String imagePath, String nom, String contMessage, String temps) {
-    this.imagePath = imagePath;
-    this.nom = nom;
-    this.contMessage = contMessage;
-    this.temps = temps;
-
+  Icon icon ;
+   Coordonne ({required this.imagePath, required this.nom, required this.contMessage, required this.icon});
   }
-}*/
 
